@@ -739,6 +739,7 @@ footer {
 
   footer{
     height: 100svh;
+    margin-top: 5rem;
   }
   .footer-wrapper{
     height: 100%;
@@ -755,7 +756,7 @@ footer {
     width: 100vw;
   }
   .footer-text{
-    padding-bottom: 9rem;
+    padding-bottom: 5rem;
   }
   .footer-f p{
     font-size: 12px;
