@@ -741,7 +741,7 @@ footer {
     height: 100svh;
   }
   .footer-wrapper{
-    height: 45.5rem;
+    height: 100%;
     position: relative;
   }
   .footer-link:nth-child(1) p{
@@ -749,9 +749,13 @@ footer {
   }
   .footer-img{
     position: absolute;
-    top: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     width: 100vw;
+  }
+  .footer-text{
+    padding-bottom: 9rem;
   }
   .footer-f p{
     font-size: 12px;
