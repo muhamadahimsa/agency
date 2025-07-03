@@ -286,18 +286,22 @@ footer{
   footer{
     height: 100svh;
   }
-  .footer-wrapper{
-    height: 45.5rem;
-    position: relative;
-  }
   .footer-link:nth-child(1) p{
     font-size: 1.5rem;
   }
+  .footer-wrapper{
+    height: 100%;
+    position: relative;
+  }
   .footer-img{
     position: absolute;
-    top: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     width: 100vw;
+  }
+  .footer-text{
+    padding-bottom: 6rem;
   }
   .footer-f p{
     font-size: 12px;
