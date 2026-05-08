@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+
+  background-color: var(--primary);
+  font-family: "Host Grotesk", sans-serif;
+  color: var(--secondary);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+.ofh {
+  overflow: hidden;
+}
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide-info{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: #111;
+  font-weight: 800;
+  z-index: 2;
+}
+
+@media (max-width: 530px) {
+  
+}

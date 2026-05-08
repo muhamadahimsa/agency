@@ -1,183 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="./work.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="icon" href="./Images/fav-icon.png" type="image/png">
 
-    <title>Agency</title>
+    <title>Arunika | Projects</title>
   </head>
   <body>
     <main class="app">
       <nav>
-        <div class="nav-btn">
-          <p>Menu</p>
-          <div class="nav-cube"></div>
+        <div class="nav-logo">
+          <a href="./index.html"> ARUNIKA </a>
         </div>
-        <div class="nav-items">
-          <div class="nav-item close">
-            <p>Close</p>
-          </div>
-          <div class="nav-item">
-            <p>Homepage</p>
-          </div>
-          <div class="nav-item">
-            <p>About</p>
-          </div>
-          <div class="nav-item">
-            <p>Work</p>
-          </div>
-          <div class="nav-item">
-            <p>Insight</p>
-          </div>
-          <div class="nav-item">
-            <p>Contact</p>
-          </div>
-        </div>
+        <button class="nav-toggler">
+          <p class="open">Menu</p>
+          <p class="close">Close</p>
+        </button>
       </nav>
-      <div class="lines">
-        <div class="lined"></div>
-        <div class="lined"></div>
-        <div class="lined"></div>
-        <div class="lined"></div>
-      </div>
-      <section class="works">
-        <div class="hero">
-          <h1>Work</h1>
-          <p>Selected</p>
-        </div>
-        <div class="work-wrapper">
-          <div class="work" data-img="./Lab/work1.jpg">
-            <p>001</p>
-            <p>Stories on Street</p>
-            <p>Ads (OOH Campaign)</p>
-            <p>2025</p>
-            <p>GO-KID Urban Bikes</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/work6.jpg">
-            <p>002</p>
-            <p>Essence No. 532-8</p>
-            <p>Branding</p>
-            <p>2025</p>
-            <p>Zara</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/work3.jpg">
-            <p>003</p>
-            <p>Golden Haze</p>
-            <p>Branding</p>
-            <p>2024</p>
-            <p>Sora Skincare</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/work4.jpg">
-            <p>004</p>
-            <p>Shape the Noise</p>
-            <p>Photography</p>
-            <p>2024</p>
-            <p>Ether Audio</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/card.png">
-            <p>005</p>
-            <p>Harmony Flow</p>
-            <p>Identity</p>
-            <p>2024</p>
-            <p>Harmony Hospital</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/img6.jpeg">
-            <p>006</p>
-            <p>Corelight</p>
-            <p>3D Design</p>
-            <p>2024</p>
-            <p>Nuralabs AI</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/img7.jpeg">
-            <p>007</p>
-            <p>Kasih Klasik</p>
-            <p>Photography</p>
-            <p>2023</p>
-            <p>Casablanca Music</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/img8.jpeg">
-            <p>008</p>
-            <p>Flowstate</p>
-            <p>Motion Design</p>
-            <p>2023</p>
-            <p>Monka OS</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/img4.jpeg">
-            <p>009</p>
-            <p>Daily Light</p>
-            <p>Brand Documentation</p>
-            <p>2023</p>
-            <p>KIVI Studio</p>
-            <div class="overlay"></div>
-          </div>
-          <div class="work" data-img="./Lab/img9.jpeg">
-            <p>010</p>
-            <p>Echoform</p>
-            <p>3D Visualization</p>
-            <p>2023</p>
-            <p>Zayne Objects</p>
-            <div class="overlay"></div>
-          </div>
-        </div>
-        <div class="work-images">
-          <div class="work-img">
-            
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="footer-wrapper">
-          <div class="footer-text">
-            <p>Get in touch</p>
-            <div class="footer-links">
-              <div class="footer-link">
-                <p>contact@arunika.com</p>
-                <p>44 77 99 00 24</p>
-                <p>design your ideas</p>
-              </div>
-              <div class="footer-link">
-                <p>Behance</p>
-                <p>Instagram</p>
-              </div>
+
+      <div class="nav-content">
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+
+        <div class="nav-items">
+          <div class="nav-items-col">
+            <div class="nav-socials">
+              <a href="#">Bluesky</a>
+              <a href="#">Pinterest</a>
+              <a href="#">Youtube</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">X</a>
+            </div>
+            <div class="nav-legal">
+              <a href="#">Cookie Policy</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Data Right</a>
+              <a href="#">Disclosures</a>
             </div>
           </div>
-          <div class="footer-img">
-            <img src="./Lab/footer.jpg" alt="" />
+          <div class="nav-items-col">
+            <div class="nav-primary-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="work.html">Projects</a>
+              <a href="insight.html">Insights</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <div class="nav-secondary-links">
+              <a href="#">Playground</a>
+              <a href="#">Build Something</a>
+              <a href="#">Activity Feed</a>
+              <a href="#">Profile</a>
+            </div>
           </div>
         </div>
-        <div class="footer-f">
-          <div class="ofh">
-            <p>Arunika</p>
-            <p>All Rights Reserved</p>
-          </div>
-          <div class="ofh">
-            <p>Privacy Policy</p>
-            <p>Website by Muhamad Ahimsa</p>
-          </div>
+      </div>
+
+      <section class="slider">
+        <div class="slide-info">
+          <p id="slide-title"></p>
+          <p id="slide-count"></p>
         </div>
-      </footer>
+
+        <canvas></canvas>
+      </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/Draggable.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    
-    <script type="module" src="./work.js"></script>
-    <script src="./nav.js"></script>
+    <script type="module" src="./js/work.js"></script>
+    <script src="./js/splitting.min.js"></script>
+    <script type="module" src="./js/nav.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,241 +10,118 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./Images/fav-icon.png" type="image/png">
 
-    <title>Agency</title>
+    <title>Arunika | Home</title>
   </head>
   <body>
     <main class="app">
       <nav>
-        <div class="nav-btn">
-          <p>Menu</p>
-          <div class="nav-cube"></div>
+        <div class="nav-logo">
+          <a href="./index.html"> ARUNIKA </a>
         </div>
-        <div class="nav-items">
-          <div class="nav-item close">
-            <p>Close</p>
-          </div>
-          <div class="nav-item">
-            <a href="./index.html"><p>Homepage</p></a>
-          </div>
-          <div class="nav-item">
-            <a href="./about2.html"><p>About</p></a>
-          </div>
-          <div class="nav-item">
-            <a href="./work.html"><p>Work</p></a>
-          </div>
-          <div class="nav-item">
-            <a href="./insight.html"><p>Insight</p></a>
-          </div>
-          <div class="nav-item">
-            <p>Contact</p>
-          </div>
-        </div>
+        <button class="nav-toggler">
+          <p class="open">Menu</p>
+          <p class="close">Close</p>
+        </button>
       </nav>
-      <div class="lines">
+
+      <div class="nav-content">
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+        <div class="nav-bg"></div>
+
+        <div class="nav-items">
+          <div class="nav-items-col">
+            <div class="nav-socials">
+              <a href="#">Bluesky</a>
+              <a href="#">Pinterest</a>
+              <a href="#">Youtube</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">X</a>
+            </div>
+            <div class="nav-legal">
+              <a href="#">Cookie Policy</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Data Right</a>
+              <a href="#">Disclosures</a>
+            </div>
+          </div>
+          <div class="nav-items-col">
+            <div class="nav-primary-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="work.html">Projects</a>
+              <a href="insight.html">Insights</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <div class="nav-secondary-links">
+              <a href="#">Playground</a>
+              <a href="#">Build Something</a>
+              <a href="#">Activity Feed</a>
+              <a href="#">Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="linest">
         <div class="lined"></div>
         <div class="lined"></div>
         <div class="lined"></div>
         <div class="lined"></div>
       </div>
-      <section class="draggable">
-        <div class="draggable-container">
-          <div class="draggable-item">
-            <img src="./Lab/img3.jpg" alt="" />
-          </div>
-          <div class="draggable-item">
-            <img src="./Lab/img7.jpeg" alt="" />
-          </div>
-          <div class="draggable-item">
-            <img src="./Lab/work2.jpg" alt="" />
-          </div>
-          <div class="draggable-item">
-            <img src="./Lab/work3.jpg" alt="" />
-          </div>
-          <div class="draggable-item">
-            <img src="./Lab/img6.jpeg" alt="" />
-          </div>
-          <div class="draggable-item">
-            <img src="./Lab/img4.jpeg" alt="" />
-          </div>
-          <div class="draggable-item --text">
-            <h2>Arunika</h2>
-            <p>
-              We help brands show up with style and purpose — whether it’s
-              through visuals, stories, or websites. From ads to identity, we
-              keep things bold, clean, and human.
-            </p>
-          </div>
-
-          <div class="draggable-item --text">
-            <h2>#Note</h2>
-            <p>
-              We know how stressful creative projects can be — that’s why we
-              keep things clean, calm, and clear. With Arunika, you get a team
-              that listens closely, moves fast, and keeps quality high from
-              start to finish. Whether it’s branding, web, or ads, we help you
-              show up in the best way possible.
-            </p>
-          </div>
-        </div>
-        <div class="draggable-title">
+      <section class="hero">
+        <div class="hero-content-foreground">
           <h1>Arunika</h1>
-          <p>Let's Work Together</p>
+          <p>(Scoll-Down)</p>
         </div>
-        <div class="draggable-footer">
-          <p>
+        <div class="hero-content-background">
+          <h2>
             "We create bold visuals and digital experiences that make your brand
             impossible to ignore."
-          </p>
+          </h2>
         </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          class="smudge-revealer"
+        >
+          <defs>
+            <filter id="smudge-goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="25" />
+              <feColorMatrix
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -14"
+              />
+            </filter>
+          </defs>
+
+          <mask id="smudge-mask">
+            <g class="smudge-blobs" filter="url(#smudge-goo)"></g>
+          </mask>
+        </svg>
       </section>
       <section class="about">
         <div class="about-text">
-          <h2>
+          <h3>
             Arunika is a creative agency that helps brands express themselves
             through bold visuals and thoughtful digital work. We focus on
             branding, ads, photography, and websites — all crafted with clarity,
             style, and purpose.
-          </h2>
+          </h3>
         </div>
       </section>
-      <div class="marquee">
-        <div class="marquee-wrapper">
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-          <div class="ofh">
-            <p>Selected Works</p>
-            <p>+</p>
-          </div>
-        </div>
-      </div>
       <section class="carousel">
         <div class="slide">
           <div class="slide-img">
-            <img src="./Lab/work1.jpg" alt="project-1" />
+            <img src="./Images/work1.webp" alt="project-1" />
           </div>
           <div class="slide-copy">
             <div class="slide-tag">
@@ -255,10 +132,8 @@
                 <a href="./">View Project</a>
               </div>
             </div>
-            <div class="slide-marquee">
-              <div class="marquee-container">
-                <h3>Stories on Street</h3>
-              </div>
+            <div class="slide-title">
+              <h4>Stories on Street</h4>
             </div>
           </div>
         </div>
@@ -271,7 +146,7 @@
       </section>
       <section class="service">
         <div class="service-img">
-          <img src="./Lab/service.png" alt="" />
+          <img src="./Images/service.webp" alt="" />
         </div>
         <div class="service-info">
           <div class="service-title">
@@ -297,7 +172,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/card.png" alt="" />
+              <img src="./Images/card.png" alt="" />
             </div>
           </div>
           <div class="service-item">
@@ -311,7 +186,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/img2.jpg" alt="" />
+              <img src="./Images/img2.webp" alt="" />
             </div>
           </div>
           <div class="service-item">
@@ -325,7 +200,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/img3.jpg" alt="" />
+              <img src="./Images/img3.webp" alt="" />
             </div>
           </div>
           <div class="service-item">
@@ -340,7 +215,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/img4.jpg" alt="" />
+              <img src="./Images/img4.webp" alt="" />
             </div>
           </div>
           <div class="service-item">
@@ -354,7 +229,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/img5.jpg" alt="" />
+              <img src="./Images/img5.webp" alt="" />
             </div>
           </div>
           <div class="service-item">
@@ -368,7 +243,7 @@
               </p>
             </div>
             <div class="service-item-img">
-              <img src="./Lab/img6.jpg" alt="" />
+              <img src="./Images/img6.webp" alt="" />
             </div>
           </div>
         </div>
@@ -377,7 +252,7 @@
         <h5>Insight</h5>
         <div class="insight">
           <div class="in-img">
-            <img src="./Lab/work2.jpg" alt="" />
+            <img src="./Images/work5.webp" alt="" />
             <div class="ofh">
               <p>Read</p>
             </div>
@@ -387,18 +262,13 @@
             <p>
               Simplicity in design isn’t just a trend — it’s a discipline. At
               Arunika, we often find that stripping away the noise helps
-              highlight what really matters: the message. It’s not always about
-              making things minimal, but about removing distractions so the
-              essence comes through. A clean layout, a single typeface, a
-              well-placed photo — all of it works together to create something
-              that feels intentional and honest. Good design doesn’t need to
-              scream. It just needs to land.
+              highlight what really matters: the message.
             </p>
           </div>
         </div>
         <div class="insight">
           <div class="in-img">
-            <img src="./Lab/img7.jpeg" alt="" />
+            <img src="./Images/img7.webp" alt="" />
             <div class="ofh">
               <p>Read</p>
             </div>
@@ -407,19 +277,14 @@
             <p>The First 3 Seconds Matter</p>
             <p>
               You only get one first impression — and online, it lasts about
-              three seconds. Whether it’s a landing page, a campaign visual, or
-              a product photo, those first few moments decide if someone stays,
-              scrolls, or leaves. That’s why we approach every project with
-              clarity and impact in mind from the very start. We build visual
-              hierarchy, movement, and storytelling into our designs to guide
-              the viewer, not overwhelm them. In a world full of noise, being
-              clear is the boldest move.
+              three seconds, whether it’s a landing page, a campaign visual, or
+              a product photo.
             </p>
           </div>
         </div>
         <div class="insight">
           <div class="in-img">
-            <img src="./Lab/test.jpg" alt="" />
+            <img src="./Images/test.webp" alt="" />
             <div class="ofh">
               <p>Read</p>
             </div>
@@ -428,19 +293,13 @@
             <p>Why Your Brand Should Feel Like a Person</p>
             <p>
               A strong brand isn’t just seen — it’s felt. That feeling often
-              comes from treating the brand like a living character. At Arunika,
-              we build brands by asking: what kind of person is this? Confident
-              and sleek? Warm and playful? Honest and understated? This way of
-              thinking helps guide everything from tone of voice, color palette,
-              typography, to how the brand moves in a digital space. It creates
-              a sense of personality that people recognize — and trust — over
-              time.
+              comes from treating the brand like a living character.
             </p>
           </div>
         </div>
         <div class="insight">
           <div class="in-img">
-            <img src="./Lab/card.png" alt="" />
+            <img src="./Images/card.png" alt="" />
             <div class="ofh">
               <p>Read</p>
             </div>
@@ -450,11 +309,7 @@
             <p>
               Restraint is an underrated skill in creative work. There’s always
               the temptation to add more — more gradients, more animations, more
-              content — but sometimes, the power is in what’s left out. We often
-              challenge ourselves to refine rather than expand. The result? Work
-              that feels more focused, more elegant, and more aligned with the
-              brand’s voice. Just because we can do something in design doesn’t
-              always mean we should.
+              content.
             </p>
           </div>
         </div>
@@ -476,7 +331,7 @@
             </div>
           </div>
           <div class="footer-img">
-            <img src="./Lab/footer.jpg" alt="" />
+            <img src="./Images/footer.webp" alt="" />
           </div>
         </div>
         <div class="footer-f">
@@ -493,12 +348,9 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/Draggable.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    <script type="module" src="./app.js"></script>
-    <script src="./nav.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script src="./js/splitting.min.js"></script>
+    <script type="module" src="./js/nav.js"></script>
   </body>
 </html>
