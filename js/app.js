@@ -201,6 +201,17 @@ aboutContainer.addEventListener("mouseleave", () => {
 
 // Work
 document.addEventListener("DOMContentLoaded", () => {
+  // --- FIX MOBILE VIEWPORT JUMP ---
+  const updateVh = () => {
+    // Ambil tinggi asli jendela (pixel)
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+  };
+
+  updateVh();
+  // Update hanya jika orientasi layar berubah, bukan pas scroll
+  window.addEventListener('orientationchange', updateVh);
+
   let activeSlideIndex = 0;
   let previousProgress = 0;
   let isAnimatingSlide = false;
@@ -368,7 +379,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollTrigger = ScrollTrigger.create({
     trigger: ".carousel",
     start: "top top",
-    end: `+=${window.innerHeight * 3}px`,
+    end: () => `+=${window.innerHeight * 3}`,
     pin: true,
     pinSpacing: true,
     scrub: 1,
