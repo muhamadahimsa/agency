@@ -506,6 +506,9 @@ footer {
 }
 
 @media (max-width: 530px) {
+  .hero{
+    pointer-events: none;
+  }
   .hero-content-foreground h1{
     letter-spacing: .5rem;
     font-weight: 800;
