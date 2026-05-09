@@ -201,16 +201,30 @@ aboutContainer.addEventListener("mouseleave", () => {
 
 // Work
 document.addEventListener("DOMContentLoaded", () => {
-  // --- FIX MOBILE VIEWPORT JUMP ---
+  // --- FIX VIEWPORT JUMP (MOBILE & DESKTOP RESIZE) ---
   const updateVh = () => {
-    // Ambil tinggi asli jendela (pixel)
-    let vh = window.innerHeight * 0.01;
+    // Set variabel CSS --vh sesuai tinggi window saat ini
     document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+    
+    // Refresh ScrollTrigger biar kalkulasi 'pin' dan 'end' update ke tinggi baru
+    ScrollTrigger.refresh();
   };
 
   updateVh();
-  // Update hanya jika orientasi layar berubah, bukan pas scroll
-  window.addEventListener('orientationchange', updateVh);
+
+  // Dengerin resize buat Desktop
+  window.addEventListener('resize', () => {
+    // Cek apakah ini desktop (lebar > 1024 atau bukan touch device)
+    // Ini biar mobile gak 'flicker' pas address bar muncul/hilang
+    if (window.innerWidth > 1024) {
+      updateVh();
+    }
+  });
+
+  // Tetap dengerin rotasi buat Mobile
+  window.addEventListener('orientationchange', () => {
+    setTimeout(updateVh, 100); // Kasih delay dikit biar rotasi kelar dulu
+  });
 
   let activeSlideIndex = 0;
   let previousProgress = 0;
