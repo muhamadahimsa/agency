@@ -1,3 +1,4 @@
+import barba from 'https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/+esm';
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js";
 import Lenis from "https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/+esm";
 import gsap from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm";

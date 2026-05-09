@@ -13,7 +13,8 @@ body {
   font-family: "Host Grotesk", sans-serif;
   color: var(--secondary);
 }
-img {
+img,
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
